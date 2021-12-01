@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/minimalisttodolist/static/css/main.9dacf1f5.chunk.css",
+    "main.js": "/minimalisttodolist/static/js/main.a3a9daab.chunk.js",
+    "main.js.map": "/minimalisttodolist/static/js/main.a3a9daab.chunk.js.map",
+    "runtime-main.js": "/minimalisttodolist/static/js/runtime-main.e123b121.js",
+    "runtime-main.js.map": "/minimalisttodolist/static/js/runtime-main.e123b121.js.map",
+    "static/js/2.e685ca64.chunk.js": "/minimalisttodolist/static/js/2.e685ca64.chunk.js",
+    "static/js/2.e685ca64.chunk.js.map": "/minimalisttodolist/static/js/2.e685ca64.chunk.js.map",
+    "static/js/3.fbe8d2eb.chunk.js": "/minimalisttodolist/static/js/3.fbe8d2eb.chunk.js",
+    "static/js/3.fbe8d2eb.chunk.js.map": "/minimalisttodolist/static/js/3.fbe8d2eb.chunk.js.map",
+    "index.html": "/minimalisttodolist/index.html",
+    "static/css/main.9dacf1f5.chunk.css.map": "/minimalisttodolist/static/css/main.9dacf1f5.chunk.css.map",
+    "static/js/2.e685ca64.chunk.js.LICENSE.txt": "/minimalisttodolist/static/js/2.e685ca64.chunk.js.LICENSE.txt",
+    "static/media/add_black_24dp.d8853d16.svg": "/minimalisttodolist/static/media/add_black_24dp.d8853d16.svg",
+    "static/media/done_black_24dp.42c93ded.svg": "/minimalisttodolist/static/media/done_black_24dp.42c93ded.svg",
+    "static/media/remove_black_24dp.a8061b12.svg": "/minimalisttodolist/static/media/remove_black_24dp.a8061b12.svg",
+    "static/media/undo_black_24dp.c7a254e4.svg": "/minimalisttodolist/static/media/undo_black_24dp.c7a254e4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e123b121.js",
+    "static/js/2.e685ca64.chunk.js",
+    "static/css/main.9dacf1f5.chunk.css",
+    "static/js/main.a3a9daab.chunk.js"
+  ]
+}
