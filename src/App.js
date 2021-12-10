@@ -12,9 +12,18 @@ class App extends Component{
       item : [],
       selesai : [],
       lenyap : [],
-      singgah : []
-    };
+      isToggleOn: false,
+      nilai : ''
+        };
   }
+
+  eek = (e) => {
+    this.setState({
+      isToggleOn: !this.state.isToggleOn,
+      nilai : e.target.parentNode.parentNode.parentNode.getAttribute("value")
+    })
+    console.log(e.target.parentNode.parentNode.parentNode.getAttribute("value"))
+  };
 
 //function untuk menjalankan semuanya
 
@@ -59,9 +68,8 @@ class App extends Component{
 
   hapus = e => {
     let a = e.target.parentNode.parentNode.parentNode.getAttribute("value");
-    let b = this.state.item.splice(a, 1);
     this.setState({
-      lenyap : this.state.lenyap.concat(b)
+      lenyap : this.state.item.splice(a, 1)
     });
   }
 
@@ -69,10 +77,10 @@ class App extends Component{
 
   hapus1 = e => {
     let a = e.target.parentNode.parentNode.parentNode.getAttribute("value");
-    let b = this.state.selesai.splice(a, 1);
     this.setState({
-      lenyap : this.state.lenyap.concat(b)
+      lenyap : this.state.selesai.splice(a, 1)
     });
+    //this.state.lenyap.concat(b)
   }
 
   render() {
@@ -83,7 +91,7 @@ class App extends Component{
           <input placeholder="Apa yang ingin anda lakukan ?" className="outline-none sm:w-11/12 w-10/12 " type="text" onChange={this.ubah} value={this.state.simpan} />
           <button className="py-1 w-2/12 sm:w-1/12 bg-white text-black flex justify-center"><img className="" src={Add_black} alt="Add_black" /></button>
         </form>
-        <List className="items-start w-1/5" item={this.state.item} sudah={this.sudah} hapus={this.hapus}/>
+        <List className="items-start w-1/5" item={this.state.item} sudah={this.sudah} hapus={this.hapus}  detail={this.eek} tampil={this.state.isToggleOn} nilai={this.state.nilai}/>
         <Mati className="items-start w-1/5" nos={this.state.selesai} balik={this.balik} hapus={this.hapus1}/>
       </div>
     )
